@@ -50,6 +50,12 @@ README Mod 2 King Country Housing Price
   - 'long'
   - 'sqft_living15'
   - 'sqft_lot15'
+## Project Findings:
+- Features such as 'id', 'date', 'waterfront', 'view', 'condition', 'yr_built', and 'yr_renovated' did not help too much on predicting price.
+- From our data visuals, zip code seem to play a big factor on prices. 
+- From the Decision Tree Regressor the MAE increased after transforming and scaling features. (Possibly overfitting)
+- From Random Forest the MAE also increased after transforming and scaling features. (Possibly overfitting)
+- Both Decision Tree and Random Forest R2 score did improve by ~ 2-5%.
 
 ### Methods Used
 * Statistics
