@@ -17,8 +17,6 @@ README Mod 2 King Country Housing Price
 - Prices Range: less then $1.3 mln 
   - 96% of the data was below $1.3 million
 
-
- 
 #### Business Problems:
 - What area is in my price range? What area has the best price per sqft?
 - What is the average price for that zip code?
@@ -50,12 +48,14 @@ README Mod 2 King Country Housing Price
   - 'long'
   - 'sqft_living15'
   - 'sqft_lot15'
+  
 ## Project Findings:
 - Features such as 'id', 'date', 'waterfront', 'view', 'condition', 'yr_built', and 'yr_renovated' did not help too much on predicting price.
 - From our data visuals, zip code seem to play a big factor on prices. 
 - From the Decision Tree Regressor the MAE increased after transforming and scaling features. (Possibly overfitting)
 - From Random Forest the MAE also increased after transforming and scaling features. (Possibly overfitting)
 - Both Decision Tree and Random Forest R2 score did improve by ~ 2-5%.
+
 
 ### Methods Used
 * Statistics
@@ -68,26 +68,31 @@ README Mod 2 King Country Housing Price
 * Log Transformation
 * Min-Max Scaling
 
+### Metrics Used:
+- Mean Absolute Error: we wanted to see the + and - in dollars that the models predicted.
+- R2 score: we wanted an indicator that would tell use the accuracy % our models are performing. 
+- 
+
 ## Models Used:
+
 ### Decision Tree Regressor (Anh)
-  - Decision Tree did not do so well at predicting future unknown data. (May be overfitting)
+  - Decision Tree did not do so well at predicting future unknown data. (Weakness: May be overfitting)
   - The initial score mean absolute error & R2 
     - MAE Score: 103564.73759259259
     - R2 Score: 0.6560417913775461
   - After finding best leaf_nodes to use:
     - MAE Score: 92981.27526326235
     - R2 Score: 0.6954556318824348
-  - After Feature Engineering:
+  - After Feature Engineering: (Some minor imporvements on the model here. MAE did go up from the last test, but R2 score improved)
     - MAE Score: 96855.61173606818
     - R2 Score: 0.7386150819288836
 ### Random Forest Regressor (Anh)
-  - Random Forest did a decent predicition. (Possible overfitting as well)
+  - Random Forest did a decent predicition. (Weakness: Possible overfitting as well)
     - MAE Score: 73762.70740831373
     - R2 Score: 0.7950082670186805
-  - After Feature Engineering:
+  - After Feature Engineering:(Some minor imporvements on the model here. MAE didn't improve, while R2 did)
     - MAE Score: 75174.91694989661
     - R2 Score: 0.8137494114589178
-    
     
     
 ### Technologies
@@ -100,12 +105,11 @@ README Mod 2 King Country Housing Price
 
 
 ## Project Description
-Some of the hypothesis questions that we had was if location influenced price. Things such as longitute/ latitude or zipcode.
+Since the data provided was 2014-2015, we did not have the most earliest data to train our model. Some of the hypothesis questions that we had was if location influenced price. Things such as longitute/ latitude or zipcode.
 We created a map to input the data and saw that some zipcodes had a higher average price and some lower. 
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+
 
 ## Needs of this project
-
 - frontend/backend developers
 - data exploration/descriptive statistics
 - data processing/cleaning
