@@ -2,7 +2,7 @@ README Mod 2 King Country Housing Price
 
 # King County, Seattle, Washington ,  USA 
 ### Project Details:
-### Presentation URL: https://www.canva.com/design/DAD3vtuuMy8/O5Ilu5Rdr0DjdZMn9xxaEw/view?utm_content=DAD3vtuuMy8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+### [Presentation URL](https://www.canva.com/design/DAD3vtuuMy8/O5Ilu5Rdr0DjdZMn9xxaEw/view?utm_content=DAD3vtuuMy8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 #### Goals  
 - Find the price range of the majority of the houses.
   - Compare house sizes and prices per zip code.
@@ -11,7 +11,7 @@ README Mod 2 King Country Housing Price
   - Find the price range of the majority of the houses.
 
 - Data used: King County dataset, years 2014-2015.
-- Metric: average prediction within +/-$56,232.
+- Metric: average prediction within +/-11.7%.
 - Average Price: ~$490,000
 - Median Price: $440,000
 - Prices Range: less then $1.3 mln 
@@ -51,10 +51,12 @@ README Mod 2 King Country Housing Price
   
 ## Project Findings:
 - Features such as 'id', 'date', 'waterfront', 'view', 'condition', 'yr_built', and 'yr_renovated' did not help too much on predicting price.
-- From our data visuals, zip code seem to play a big factor on prices. 
+- From our data visuals, zip code (along with Latitude and Longitude) seem to play a big factor on prices. 
 - From the Decision Tree Regressor the MAE increased after transforming and scaling features. (Possibly overfitting)
 - From Random Forest the MAE also increased after transforming and scaling features. (Possibly overfitting)
 - Both Decision Tree and Random Forest R2 score did improve by ~ 2-5%.
+- GAM model with tensor terms(e.g., zip code with coordinates) showed good results.
+- Reducing number of features didnt improve results of the regression models(Linear, MARS and GAM).
 
 
 ### Methods Used
@@ -67,11 +69,12 @@ README Mod 2 King Country Housing Price
 * Predictive Modeling
 * Log Transformation
 * Min-Max Scaling
+* Robust Scaling
 
 ### Metrics Used:
-- Mean Absolute Error: we wanted to see the + and - in dollars that the models predicted.
-- R2 score: we wanted an indicator that would tell use the accuracy % our models are performing. 
-- 
+- Mean Absolute Error: we wanted to see the average error in dollars that the models predicted.
+- Mean Absolute percentage error: we wanted to see mean % of error. this metric used to complement mean abs.error. 
+- R2 score: we wanted to see what percentage of variation are coming from the features we use. 
 
 ## Models Used:
 
@@ -93,6 +96,27 @@ README Mod 2 King Country Housing Price
   - After Feature Engineering:(Some minor imporvements on the model here. MAE didn't improve, while R2 did)
     - MAE Score: 75174.91694989661
     - R2 Score: 0.8137494114589178
+    
+ ### Linear Regression (Abzal)
+  - Linear Regression was used as base model. 
+    - MAE Score: $92351.24
+    - R2 Score: 0.7034
+ ### Multivariate Adaptive Regression Splines- MARS (Abzal)
+  - Mars model with one DoF
+    - MAE Score: $89831.63
+    - R2 Score: 0.7180
+  - Mars model with two DoF
+    - MAE Score: $75824.69
+    - R2 Score: 0.7908
+ ### Generalized Additive Models - GAM (Abzal)
+  - Linear GAM model
+    - MAE Score: $68226.98
+    - R2 Score: 0.8296
+    - Mean absolute percentage error: 15.5%
+  - GAM model with tensor terms for location, sqft, condition, etc.
+    - MAE Score: $53387.68
+    - R2 Score: 0.8808
+    - Mean absolute percentage error: 11.7%
     
     
 ### Technologies
