@@ -150,15 +150,16 @@ We created a map to input the data and saw that some zipcodes had a higher avera
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
 2. Repo content:
 
-- Raw Data:
+- Raw Data: [kc_house_data.csv](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/kc_house_data.csv)
 
 - Jupyter notebooks:
-  - by Anh:
-  - by Abzal:
-  - by Mark:
-- Visuals:
-
-
+  - by Anh: [Anh-MOD2.ipnyb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Anh%20-%20MOD2.ipynb)
+  - by Abzal: [Project_2_Abzal_S_.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Project_2_Abzal_S_.ipynb)
+  - by Mark: [Models_Mark.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Models_Mark.ipynb)
+      - [Attempt-at-lat-long-GAM.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Attempt%20at%20lat%20long%20GAM.ipynb)
+      - [KC_Maps.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/KC_Maps.ipynb)
+      - [KC_Maps_2.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/KC_Maps_2.ipynb)
+  - Visuals:
 
 
 #### Project Members:
