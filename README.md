@@ -1,6 +1,9 @@
 README Mod 2 King Country Housing Price
 
 # King County, Seattle, Washington ,  USA 
+
+![King County Home Map](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Images/Prices_Point_Map.png?raw=true)
+
 ### Project Details:
 ### [Presentation URL](https://www.canva.com/design/DAD3vtuuMy8/O5Ilu5Rdr0DjdZMn9xxaEw/view?utm_content=DAD3vtuuMy8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 #### Goals  
@@ -118,6 +121,25 @@ README Mod 2 King Country Housing Price
     - R2 Score: 0.8808
     - Mean absolute percentage error: 11.7%
     
+### OLS Regression - (Mark)
+  - Latitude and Longitude only
+    - R2 Score: 0.714
+### GAM Models - Latitude and longitude only (Mark)
+  - Linear GAM
+    - R2 Score: 0.2946
+  - GAM model
+    - R2 Score: 0.4393
+  - Linear GAM with lat, long as a tensor
+    - R2 Score: 0.3811
+### Decision Tree Regressor (Mark)
+  - MAE: $103,663
+  - R2 Score: 0.7185
+### Random Forest Regressor (Mark)
+  - MAE: $75,443
+### XGB Regressor (Mark)
+  - MAE: $131,028
+  - R2 Score: 0.6536
+    
     
 ### Technologies
 * Python
@@ -160,6 +182,7 @@ We created a map to input the data and saw that some zipcodes had a higher avera
       - [KC_Maps.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/KC_Maps.ipynb)
       - [KC_Maps_2.ipynb](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/KC_Maps_2.ipynb)
   - Visuals:
+    - [King County Maps](https://github.com/geomms/Module_2_House_Prices_Project/tree/master/Images)
 
 
 #### Project Members:
