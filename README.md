@@ -152,7 +152,7 @@ README Mod 2 King Country Housing Price
 
 ## Project Description
 Since the data provided was 2014-2015, we did not have the most earliest data to train our model. Some of the hypothesis questions that we had was if location influenced price. Things such as longitute/ latitude or zipcode.
-We created a map to input the data and saw that some zipcodes had a higher average price and some lower. 
+We created a map to input the data and saw that some zipcodes had a higher average price and some had lower. 
 
 
 ## Needs of this project
