@@ -7,7 +7,7 @@ README Mod 2 King Country Housing Price
 ### Project Details:
 ### [Presentation URL](https://www.canva.com/design/DAD3vtuuMy8/O5Ilu5Rdr0DjdZMn9xxaEw/view?utm_content=DAD3vtuuMy8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 #### Goals  
-- Find the price range of the majority of the houses.
+- Find the price range of the majority of the houses
   - Compare house sizes and prices per zip code.
   - Create price prediction model.
   - Prediction model.
