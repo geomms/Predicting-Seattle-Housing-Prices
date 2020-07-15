@@ -13,7 +13,7 @@ README Mod 2 King Country Housing Price
   - Prediction model
   - Find the price range of the majority of the houses
 
-- Data used: King County dataset, years 2014-2015.
+- Data used: King County dataset, years 2014-2015
 - Metric: average prediction within +/-11.7%.
 - Average Price: ~$490,000
 - Median Price: $440,000
