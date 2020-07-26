@@ -1,6 +1,6 @@
 README Mod 2 King Country Housing Price
 
-# King County, Seattle, Washington , USA 
+# King County, Seattle, Washington, USA 
 
 ![King County Home Map](https://github.com/geomms/Module_2_House_Prices_Project/blob/master/Images/Prices_Point_Map.png?raw=true)
 
