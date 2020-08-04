@@ -1,4 +1,4 @@
-README Mod 2 King Country Housing Price
+README Mod 2 King Country Housing Prices
 
 # King County, Seattle, Washington, USA 
 
