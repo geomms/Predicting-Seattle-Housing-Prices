@@ -35,7 +35,7 @@ README Mod 2 King Country Housing Prices
 ## Project Intro/Objective
   We displayed house sizes, prices per zip code, price per sqft, price ranges, and home features with data visuals.
   Having visuals allowed us to identify the price differences for zip codes.
-  With the data what was given to us, we also created a price prediction model. We trained and tested our model to predict      future prices given the features that the model has trained on. 
+  With the data what was given to us, we also created a price prediction model. We trained and tested our model to predict prices given the features on which the model has trained. 
   Some of the features that we used were 
   - 'price'
   - 'bedrooms'
